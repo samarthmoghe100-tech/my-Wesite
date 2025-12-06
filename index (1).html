@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football Club Registration</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <h1>FC Victory</h1>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#info">About Us</a></li>
+                <li><a href="#register">Register</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <h2>Welcome to FC Victory!</h2>
+            <p>Your journey to football excellence starts here. Learn about our teams, training schedules, and join the club!</p>
+            <a href="#register" class="cta-button">Join Now!</a>
+        </section>
+
+        <section id="info" class="information">
+            <h3>Season 2026 Information</h3>
+            <p>We are excited to kick off the new season. We offer programs for all age groups, from U10 to Adult Amateur League.</p>
+            <ul>
+                <li>Training Days: Tuesdays & Thursdays</li>
+                <li>Match Days: Saturdays</li>
+                <li>Location: City Central Field</li>
+                <li>Fee:₹1200 per season</li>
+            </ul>
+        </section>
+
+        <section id="register" class="registration">
+            <h3>Player Registration Form</h3>
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="full_name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="Contact">Contact:</label>
+                    <input type="number" id="number" name="number" required>
+                </div>
+                <div class="form-group">
+                    <label for="age">Age Group </label>
+                    <select id="age" name="age_group" required>
+                        <option value="">-- Select Age Group --</option>
+                        <option value="U10">10</option>
+                        <option value="U12">12</option>
+                        <option value="U14">14</option>
+                        <option value="U16">16</option>
+                        <option value="Adult">Adult Amateur</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="experience">Years of Experience:</label>
+                    <input type="number" id="experience" name="experience" min="0" max="20" value="0">
+                </div>
+                <button type="submit" class="submit-button">Register Player</button>
+            </form>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <p>&copy; 2025 FC Victory. Contact us at info@fcvictory.com</p>
+    </footer>
+
+</body>
+</html>
